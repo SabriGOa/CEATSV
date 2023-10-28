@@ -22,15 +22,17 @@ namespace CEATSVgrupo5
         {
             if (!String.IsNullOrEmpty(txtUsuario.Text) && !string.IsNullOrEmpty(txtContraseña.Text))
             {
+
                 try
                 {
                     Clase_BaseDatos bd = new Clase_BaseDatos();
                     Boolean res = bd.InicarSesión(txtUsuario.Text, txtContraseña.Text);
                     if (res)
                     {
-                        InicarSeción General = new InicarSeción();
-                        General.Show();
+                        General general = new General();
+                        general.Show();
                     }
+
                     else
                     {
                         MessageBox.Show("Datos Incorrectos");
@@ -40,6 +42,8 @@ namespace CEATSVgrupo5
                 {
                     MessageBox.Show("ERROR");
                 }
+               
+               
             }
             else
             {

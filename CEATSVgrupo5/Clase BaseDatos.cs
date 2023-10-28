@@ -8,7 +8,7 @@ namespace CEATSVgrupo5
 {
     class Clase_BaseDatos
     {
-        private string cadenaConexion = "Data Source=TAREASESCOLARES; Initial Catalog=SQLCEATSV; integrated Security=true;";
+        private string cadenaConexion = @"Data Source=TAREASESCOLARES\SQLEXPRESS02; Initial Catalog=SQLCEATSV; integrated Security=true;";
 
         public static string NomUsuario = "";
         public static string ConUsuario = "";
@@ -24,7 +24,8 @@ namespace CEATSVgrupo5
             SqlParameter parnomUs = new SqlParameter(@nomUs, nomUs);
             SqlParameter parcon = new SqlParameter(@conUs, conUs);
 
-            SqlCommand comando = new SqlCommand("SELECT tipoUsuario, ContraseñaUsuario, NombreUsaurio FROM usuarios = @nomUs AND contraseña COLLATE Latin_General_CS_AS = @conUs", conexion);
+            string query = "SELECT tipoUsuario, contraseñaUsuario, nombreUsuario FROM usuarios WHERE nombreUsuario  = '" + nomUs + "' AND contraseñaUsuario = '" + conUs + "'";
+            SqlCommand comando = new SqlCommand(query, conexion);
             comando.Parameters.Add(parnomUs);
             comando.Parameters.Add(parcon);
 
