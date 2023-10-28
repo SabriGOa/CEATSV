@@ -1,0 +1,18 @@
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\bin\Debug\CEATSVgrupo5.exe
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\bin\Debug\CEATSVgrupo5.pdb
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.Properties.Resources.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.csproj.GenerateResource.Cache
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.exe
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.pdb
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.Alumnos_de_la_misma_ESC.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.General.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.InicarSeción.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.PaseyRetiroAlumnos.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.csprojResolveAssemblyReference.cache
+C:\Users\quime\OneDrive\Documentos\Visual Studio 2010\Projects\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.exe
+C:\Users\quime\OneDrive\Documentos\Visual Studio 2010\Projects\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.pdb
+C:\Users\quime\OneDrive\Documentos\Visual Studio 2010\Projects\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.csprojResolveAssemblyReference.cache
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\bin\Debug\CEATSVgrupo5.exe.config
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.FrmRegistroMatrícula.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.FrmRégimenDeTurno.resources
+C:\POO\CEATSVgrupo5\CEATSVgrupo5\obj\x86\Debug\CEATSVgrupo5.MatriculaciónAlumnos.resources
