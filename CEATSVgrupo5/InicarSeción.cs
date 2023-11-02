@@ -31,7 +31,9 @@ namespace CEATSVgrupo5
                     {
                         General general = new General();
                         general.Show();
+                        
                     }
+                        
 
                     else
                     {
@@ -49,10 +51,29 @@ namespace CEATSVgrupo5
             {
                 MessageBox.Show("Por favor, complete todos los datos");            
             }
-
+            
+           
            
            
         }
+
+        private void chbMostrarContraseña_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbMostrarContraseña.Checked == true)
+            {
+                if (txtContraseña.PasswordChar == '*')
+                {
+                    txtContraseña.PasswordChar = '\0';
+                }
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '*';
+            }
+
+        }
+
+        
         
 
     }

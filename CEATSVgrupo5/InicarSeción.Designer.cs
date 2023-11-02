@@ -112,6 +112,7 @@
             this.chbMostrarContraseña.Size = new System.Drawing.Size(15, 14);
             this.chbMostrarContraseña.TabIndex = 7;
             this.chbMostrarContraseña.UseVisualStyleBackColor = true;
+            this.chbMostrarContraseña.CheckedChanged += new System.EventHandler(this.chbMostrarContraseña_CheckedChanged);
             // 
             // pictureBox1
             // 

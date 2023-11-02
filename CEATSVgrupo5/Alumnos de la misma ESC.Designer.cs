@@ -38,12 +38,10 @@
             this.CPrivada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CGrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAgrAlum = new System.Windows.Forms.Button();
+            this.btnEliminarReg = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,9 +64,10 @@
             this.CNación,
             this.CPrivada,
             this.CGrado});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(591, 423);
+            this.dataGridView1.Size = new System.Drawing.Size(699, 577);
             this.dataGridView1.TabIndex = 0;
             // 
             // CNumerodeOrden
@@ -117,98 +116,74 @@
             this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(41, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Inscripciones de Alumnos ";
             // 
-            // button1
+            // btnAgrAlum
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(121, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "AGREGAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgrAlum.BackColor = System.Drawing.Color.White;
+            this.btnAgrAlum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgrAlum.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgrAlum.Location = new System.Drawing.Point(107, 83);
+            this.btnAgrAlum.Name = "btnAgrAlum";
+            this.btnAgrAlum.Size = new System.Drawing.Size(160, 28);
+            this.btnAgrAlum.TabIndex = 2;
+            this.btnAgrAlum.Text = "AGREGAR";
+            this.btnAgrAlum.UseVisualStyleBackColor = false;
+            this.btnAgrAlum.Click += new System.EventHandler(this.btnAgrAlum_Click);
             // 
-            // button2
+            // btnEliminarReg
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(121, 209);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 28);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ELIMINAR";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(121, 107);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 28);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "MODIFICAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnEliminarReg.BackColor = System.Drawing.Color.White;
+            this.btnEliminarReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarReg.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarReg.Location = new System.Drawing.Point(107, 134);
+            this.btnEliminarReg.Name = "btnEliminarReg";
+            this.btnEliminarReg.Size = new System.Drawing.Size(160, 28);
+            this.btnEliminarReg.TabIndex = 3;
+            this.btnEliminarReg.Text = "ELIMINAR";
+            this.btnEliminarReg.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -7);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(918, 47);
+            this.pictureBox1.Size = new System.Drawing.Size(1054, 60);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(0, 31);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 54);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
             this.splitContainer1.Panel1.Controls.Add(this.comboBox1);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
-            this.splitContainer1.Panel1.Controls.Add(this.button3);
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.btnEliminarReg);
+            this.splitContainer1.Panel1.Controls.Add(this.btnAgrAlum);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(918, 455);
-            this.splitContainer1.SplitterDistance = 306;
+            this.splitContainer1.Size = new System.Drawing.Size(1054, 577);
+            this.splitContainer1.SplitterDistance = 351;
             this.splitContainer1.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(107, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 7;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "CUIT",
-            "DNI",
-            "APELLIDO",
-            "NOMBRE",
-            "GRADO",
             "CATEGORÍA"});
             this.comboBox1.Location = new System.Drawing.Point(107, 30);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 21);
+            this.comboBox1.Size = new System.Drawing.Size(201, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // label2
@@ -225,13 +200,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 481);
+            this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Alumnos_de_la_misma_ESC";
             this.Text = "Alumnos_de_la_misma_ESC";
-            this.Load += new System.EventHandler(this.Alumnos_de_la_misma_ESC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -256,12 +230,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CPrivada;
         private System.Windows.Forms.DataGridViewTextBoxColumn CGrado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAgrAlum;
+        private System.Windows.Forms.Button btnEliminarReg;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
     }

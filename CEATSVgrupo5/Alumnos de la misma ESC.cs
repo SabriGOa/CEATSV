@@ -16,9 +16,16 @@ namespace CEATSVgrupo5
             InitializeComponent();
         }
 
-        private void Alumnos_de_la_misma_ESC_Load(object sender, EventArgs e)
+        private void btnAgrAlum_Click(object sender, EventArgs e)
         {
-
+            FrmRegistroMatrícula rm = new FrmRegistroMatrícula();
+            rm.Show();
         }
+
+      
+
+     
+      
+        
     }
 }

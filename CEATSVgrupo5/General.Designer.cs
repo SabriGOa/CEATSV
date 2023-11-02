@@ -28,19 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.mspGeneral = new System.Windows.Forms.MenuStrip();
-            this.tsmRegistros = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmReportes = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lblEgresados = new System.Windows.Forms.Label();
             this.lblIngresantes = new System.Windows.Forms.Label();
@@ -57,8 +44,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.mspGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,115 +53,10 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 38);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // mspGeneral
-            // 
-            this.mspGeneral.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.mspGeneral.Dock = System.Windows.Forms.DockStyle.None;
-            this.mspGeneral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmRegistros,
-            this.tsmReportes,
-            this.tsmSalir});
-            this.mspGeneral.Location = new System.Drawing.Point(9, 9);
-            this.mspGeneral.Name = "mspGeneral";
-            this.mspGeneral.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.mspGeneral.Size = new System.Drawing.Size(313, 26);
-            this.mspGeneral.TabIndex = 1;
-            this.mspGeneral.Text = "Registros";
-            // 
-            // tsmRegistros
-            // 
-            this.tsmRegistros.BackColor = System.Drawing.Color.SkyBlue;
-            this.tsmRegistros.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator1,
-            this.usuariosToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.toolStripSeparator3,
-            this.alumnosToolStripMenuItem,
-            this.toolStripSeparator4});
-            this.tsmRegistros.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmRegistros.ForeColor = System.Drawing.Color.White;
-            this.tsmRegistros.Name = "tsmRegistros";
-            this.tsmRegistros.Size = new System.Drawing.Size(100, 22);
-            this.tsmRegistros.Text = "Registros";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
-            // 
-            // alumnosToolStripMenuItem
-            // 
-            this.alumnosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.alumnosToolStripMenuItem.Text = "Alumnos";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
-            // 
-            // tsmReportes
-            // 
-            this.tsmReportes.BackColor = System.Drawing.Color.SkyBlue;
-            this.tsmReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator5,
-            this.toolStripSeparator6});
-            this.tsmReportes.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmReportes.ForeColor = System.Drawing.Color.White;
-            this.tsmReportes.Name = "tsmReportes";
-            this.tsmReportes.Size = new System.Drawing.Size(146, 22);
-            this.tsmReportes.Text = "Observaciónes";
-            this.tsmReportes.Click += new System.EventHandler(this.tsmReportes_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(149, 6);
-            // 
-            // tsmSalir
-            // 
-            this.tsmSalir.BackColor = System.Drawing.Color.SkyBlue;
-            this.tsmSalir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmSalir.ForeColor = System.Drawing.Color.White;
-            this.tsmSalir.Name = "tsmSalir";
-            this.tsmSalir.Size = new System.Drawing.Size(59, 22);
-            this.tsmSalir.Text = "Salir";
-            // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(9, 53);
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -196,8 +76,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
-            this.splitContainer1.Size = new System.Drawing.Size(900, 384);
-            this.splitContainer1.SplitterDistance = 300;
+            this.splitContainer1.Size = new System.Drawing.Size(921, 440);
+            this.splitContainer1.SplitterDistance = 307;
             this.splitContainer1.TabIndex = 3;
             // 
             // lblEgresados
@@ -304,6 +184,7 @@
             this.button1.Size = new System.Drawing.Size(151, 110);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -361,16 +242,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 440);
-            this.Controls.Add(this.mspGeneral);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.splitContainer1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.MainMenuStrip = this.mspGeneral;
             this.Name = "General";
             this.Text = "General";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.mspGeneral.ResumeLayout(false);
-            this.mspGeneral.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -383,25 +258,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MenuStrip mspGeneral;
-        private System.Windows.Forms.ToolStripMenuItem tsmRegistros;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem tsmReportes;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripMenuItem tsmSalir;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label lblEgresados;
         private System.Windows.Forms.Label lblIngresantes;

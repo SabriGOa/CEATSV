@@ -16,10 +16,18 @@ namespace CEATSVgrupo5
             InitializeComponent();
         }
 
-        private void tsmReportes_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            Alumnos_de_la_misma_ESC alm = new Alumnos_de_la_misma_ESC();
+            alm.Show();
 
         }
+
+       
+
+       
+
+       
 
         
     }

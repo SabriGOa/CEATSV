@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CNivelInc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CNivelPrim = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,19 +60,31 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(805, 471);
-            this.splitContainer1.SplitterDistance = 268;
+            this.splitContainer1.Size = new System.Drawing.Size(1054, 631);
+            this.splitContainer1.SplitterDistance = 350;
             this.splitContainer1.TabIndex = 0;
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TURNOS";
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(125, 87);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 37);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Actualizar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(125, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Total";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -85,32 +97,20 @@
             "Noche",
             "Doble esc.",
             "Alterno"});
-            this.comboBox1.Location = new System.Drawing.Point(8, 47);
+            this.comboBox1.Location = new System.Drawing.Point(12, 53);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(253, 21);
             this.comboBox1.TabIndex = 1;
             // 
-            // button1
+            // label1
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(142, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Total";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(142, 375);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(89, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TURNOS";
             // 
             // dataGridView1
             // 
@@ -119,9 +119,10 @@
             this.CNivelInc,
             this.CNivelPrim,
             this.CFormacionIntgr});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 56);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(527, 412);
+            this.dataGridView1.Size = new System.Drawing.Size(700, 631);
             this.dataGridView1.TabIndex = 0;
             // 
             // CNivelInc
@@ -143,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 471);
+            this.ClientSize = new System.Drawing.Size(1054, 631);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmRégimenDeTurno";
             this.Text = "FrmRégimenDeTurno";
